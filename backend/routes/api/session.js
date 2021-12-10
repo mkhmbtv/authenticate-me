@@ -16,7 +16,7 @@ const validateLogin = [
   check('password')
     .exists({ checkFalsy: true })
     .withMessage('Please provide a password.'),
-    handleValidationErrors,
+  handleValidationErrors,
 ];
 
 // Login user
@@ -38,7 +38,8 @@ router.post(
 
     await setTokenCookie(res, user);
     return res.json({ user });
-  }));
+  }),
+);
 
 // Logout user
 router.delete('/', (_req, res) => {
@@ -47,7 +48,8 @@ router.delete('/', (_req, res) => {
 });
 
 // Restore session user
-router.get('/', 
+router.get(
+  '/', 
   restoreUser,
   (req, res) => {
     const { user } = req;
@@ -56,6 +58,7 @@ router.get('/',
         user: user.toSafeObject()
       });
     } else return res.json({}); 
-  });
+  },
+);
 
 module.exports = router;
