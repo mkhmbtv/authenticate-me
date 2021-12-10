@@ -19,7 +19,7 @@ router.post('/', asyncHandler(async (req, res, next) => {
     return next(err);
   }
 
-  setTokenCookie(res, user);
+  await setTokenCookie(res, user);
   return res.json({ user });
 }));
 
