@@ -6,7 +6,7 @@ const REMOVE_USER = 'session/REMOVE_USER';
 const setUser = (user) => {
   return { 
     type: SET_USER,
-    user,
+    payload: user,
   };
 }
 
@@ -32,7 +32,7 @@ const initialState = { user: null };
 export default function sessionReducer (state = initialState, action) {
   switch (action.type) {
     case SET_USER:
-      return { ...state, user: action.user };
+      return { ...state, user: action.payload };
     case REMOVE_USER: 
       return { ...state, user: null }
     default:
