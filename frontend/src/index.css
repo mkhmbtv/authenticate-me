@@ -1,1 +1,39 @@
-/* TODO Add site wide styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, main, nav, div, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #7950f2;
+}

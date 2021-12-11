@@ -1,0 +1,24 @@
+.login-form {
+  width: 400px;
+  padding: 15px;
+}
+
+.login-form input {
+  padding: 7px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form div {
+  margin: 10px 0;
+}
+
+.error {
+  color: red;
+}
