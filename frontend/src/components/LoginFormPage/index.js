@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect, useHistory } from "react-router-dom";
-import { login } from "../../store/session";
+import * as sessionActions from "../../store/session";
 import './LoginForm.css';
 
 const LoginFormPage = () => {
@@ -19,12 +19,12 @@ const LoginFormPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors([]);
-    return dispatch(login({ credential, password }))
+    return dispatch(sessionActions.login({ credential, password }))
       .then(() => history.push('/'))
       .catch(async (res) => {
         const data = await res.json();
         if (data && data.errors) setErrors(data.errors);
-      })
+      });
   };
 
   return ( 
