@@ -37,6 +37,10 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {

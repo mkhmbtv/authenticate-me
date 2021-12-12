@@ -15,14 +15,16 @@ nav {
   margin-right: 40px;
 }
 
-.nav-list a {
+.nav-list a,
+.login-modal button {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   transition: color .2s;
 }
 
-.nav-list a:hover {
+.nav-list a:hover,
+.login-modal button:hover {
   color: #ced4da;
 }
 
