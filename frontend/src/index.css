@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 *,
 *:before,
@@ -7,7 +7,7 @@
 }
 
 html {
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-size: 16px;
 }
 
@@ -29,6 +29,16 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .btn {
   border: none;
   border-radius: 3px;
@@ -36,6 +46,8 @@ ul {
   padding: 10px 30px;
   color: #fff;
   background-color: #7950f2;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .error {

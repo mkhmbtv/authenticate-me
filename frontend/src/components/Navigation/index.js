@@ -21,12 +21,14 @@ const Navigation = ({ isLoaded }) => {
   }
 
   return (
-    <ul>
-      <li>
-        <NavLink to='/'>Home</NavLink>
-      </li>
-      {isLoaded && sessionLinks}
-    </ul>
+    <nav>
+      <ul className='nav-list'>
+        <li>
+          <NavLink to='/'>Home</NavLink>
+        </li>
+        {isLoaded && sessionLinks}
+      </ul>
+    </nav>
   );
 };
 
