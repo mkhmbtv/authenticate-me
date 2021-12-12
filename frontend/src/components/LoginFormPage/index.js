@@ -29,6 +29,7 @@ const LoginFormPage = () => {
 
   return ( 
     <form className='login-form' onSubmit={handleSubmit}>
+      <h1>Log In</h1>
       {errors.length > 0 && (
         <ul>
           {errors.map((err, i) => 

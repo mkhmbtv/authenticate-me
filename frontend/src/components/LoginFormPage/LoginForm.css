@@ -3,11 +3,12 @@
   padding: 15px;
 }
 
+.login-form h1 {
+  margin-bottom: 15px;
+}
+
 .login-form input {
-  padding: 7px;
   margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
 }
 
 .login-form label {
@@ -17,8 +18,4 @@
 
 .login-form div {
   margin: 10px 0;
-}
-
-.error {
-  color: red;
 }

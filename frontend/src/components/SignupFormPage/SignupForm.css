@@ -1,0 +1,29 @@
+.signup-form {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.signup-form h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.signup-form label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-form input {
+  flex: 0 1 66%;
+}
+
+.signup-form div {
+  margin: 10px 0;
+}
+
+.signup-form .btn {
+  margin: 0 auto;
+  display: block;
+  margin-top: 15px;
+}

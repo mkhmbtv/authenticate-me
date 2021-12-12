@@ -37,3 +37,13 @@ ul {
   color: #fff;
   background-color: #7950f2;
 }
+
+.error {
+  color: red;
+}
+
+form input {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
